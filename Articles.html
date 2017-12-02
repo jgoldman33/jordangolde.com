@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+		<head>
+				<title>Articles</title>
+				<link rel="stylesheet" type="text/css" href="GenericTheme1.css">
+				<script type="text/javascript" src="Articles.js"></script>
+		</head>
+		<body>
+				<h1>Jordan Anderson's Sports Blog</h1>
+				<h2>This is the Articles page!</h2>
+				
+				<!-- Navbar -->
+				<ul>
+						<li id="homepage"><a href="HomePage.html">Home</a></li>
+						<li id="articles" class="active"><a href="Articles.html">Articles</a></li>
+						<li id="contactme"><a href="contact.asp">Contact Me</a></li>
+						<li id="about"><a href="about.asp">About</a></li>
+						<li id="barIcon" style="float:right"><a href="sidebar"><image src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh5Y5NbWiiwLxvu49Du81U0bHrwYUfjFVhuGnDc9s3Yt-gqnl_" height="15" width="15"></a>
+				</ul>
+				
+				<!-- http://www.usatoday.com/story/sports/nfl/vikings/2017/02/28/adrian-peterson-free-agent-contract-minnesota/98526644/ -->
+				<div id="VikingsDeclineAPExtension" class="article">
+						<br></br>
+						<h1>Adrian Peterson to become free agent after Vikings decline contract option</h1>
+						<p>
+								After 10 years with the Minnesota Vikings, former MVP running back Adrian Peterson will become a free agent. <br></br>
+
+								The Vikings announced Tuesday they would not pick up the $18 million option on Peterson’s contract, which will allow Peterson to hit the open market for the first time. <br></br>
+
+								The Vikings have not ruled out re-signing Peterson, but they won't be retaining him at that pay level. <br></br>
+
+								“We will continue to have conversations with his representatives and leave our future options open while determine what is best for both parties moving forward,” general manager Rick Spielman said in a statement. <br></br>
+
+								Peterson, a four-time first-team all-pro and the 2012 NFL MVP, immediately becomes the biggest name on the free agent market that opens March 9. He should attract a host of suitors despite his age (31) and health history, as he is coming off a torn meniscus that sidelined him for all but three games last season. He also missed 15 games in 2014 while on the commissioner’s exempt list after a child abuse allegation. <br></br>
+
+								"It’s been a great 10 years with the Minnesota Vikings," Peterson said in a statement to ESPN. "They know what I bring to the organization as a player, with my work ethic and dedication. I spoke with Rick Spielman this past weekend. The door is still open to find some common ground. I understand addressing the offensive line is one of their main priorities this offseason. In the meantime, I will explore my other options and see what path God leads me on. My main goal remains the same: to win a Super Bowl championship with a great team, which I also believe we have in Minnesota." <br></br>
+
+								The Vikings’ announcement on Tuesday was not a surprise – the team was never going to pay Peterson the $18 million he was set to earn in 2017 – but the timing of it makes for an intriguing story line heading into the NFL scouting combine in Indianapolis, where agents, coaches and front office officials from all 32 teams will gather this week. <br></br>
+
+								Among the teams currently with a glaring need at running back are the New York Giants (who recently released leading rusher Rashad Jennings), the Oakland Raiders (with Latavius Murray set to become a free agent) and NFC North rival Green Bay Packers (whose offense completely lacked a running game in 2016 after impending free agent Eddie Lacy was injured). <br></br>
+
+								In January, Peterson mentioned the Giants, Houston Texans and Tampa Bay Buccaneers as potential teams of interest, but he maintained his first choice was to remain in Minnesota. <br></br>
+
+								There has been plenty of speculation in recent years that Peterson would like to play for the Dallas Cowboys should he ever leave Minnesota. But with NFL rushing leader Ezekiel Elliott now in place as the Cowboys’ starter, that seems unlikely unless Peterson were willing to take a complementary role. <br></br>
+						</p>
+				</div>
+		</body>
+		
+		<footer>
+				<br></br><br></br>
+				<div id="commentSection">
+						
+						<button id="commentButton" type="button" onclick="commentButtonClicked()">Comments</button>
+						<form id="commentForm" hidden>
+								<h1>Add a Comment</h2>
+								Title:<br>
+								<input type="text" name="title"/><br><br>
+								First Name: <br>
+								<input type="text" name="lastname"/> <br><br>
+								Last Name: <br>
+								<input type="text" name="lastname"/> <br><br>
+								Comment: <br>
+								<textarea    type="text"
+													cols = "200"
+													rows = "15"
+													style="width:300px; height:100px"
+													name="commentarea"
+													value = "">
+								</textarea>
+								<br><br>
+								<button id="submitcomment" type="submit">Submit</button>
+						</form>
+						
+				</div>
+		</footer>
+
+</html>
