@@ -1,53 +1,102 @@
 <!DOCTYPE html>
-
 <html>
-		<head>
-				<title>Jordan Golde</title>
-				<link rel="stylesheet" type="text/css" href="GenericTheme1.css">
-				<link rel="stylesheet" type="text/css" href="GenericTheme1.css">
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-				<script src="HomePageScripts.js"></script>
-				<script src="jquery-3.2.1.min.js"></script>
-				<meta name="author" content="Jordan Golde">
-				<meta name="keywords" content="Jordan,Golde,Resume,Blog,Opinion">
-				<meta name="description" content="Jordan Golde web site and blog">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		</head>
-	
-		<body>
-				
-				<h1>Jordan Golde</h1>
-				<h2></h2>
-				
-				<!-- Professional Picture -->
-				<img src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-0/p206x206/14716105_1272875282750727_3004030663704636339_n.jpg?oh=45e5068c142ae15d59e98c39d48525fc&oe=595C29C0" class="CenteredPhotos">
-				<!-- Create space between blog header and about content -->
-				<br></br>
-				
-								<!-- Navbar -->
-				<ul>
-						<li id="homepage" class="active"><a href="HomePage.html">Home</a></li>
-						<li id="blog"><a href="Blog.html">Articles</a></li>
-						<li id="contactme"><a href="contact.asp">Contact Me</a></li>
-						<li id="about"><a href="about.asp">About</a></li>
-						<li id="barIcon" style="float:right"><a href="sidebar"><image src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh5Y5NbWiiwLxvu49Du81U0bHrwYUfjFVhuGnDc9s3Yt-gqnl_" height="15" width="15"></a>
-				</ul>
-				<br></br>
-				
-				<div>
-						<h2>About Me</h2>
-						<p>For now this just my personal sandbox of a website. Looking to expand it to be much more in the future! Actually professional bio will go here.</p>
+	<head>
+			<title>Jordan Golde</title>
+			<!-- Bootstrap is a javascript and css framework and it's AWESOME -->
+			<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+			<!-- Font Awesome provides hundreds of icons. The purpose of it in this app at the moment is social media icons -->
+			<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/Navbar.css"
+			<!-- 
+			ToDo: learn angular configuration requirements and implement angular version
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+		    -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="js/HomePageScripts.js"></script>
+			<script src="js/jquery-3.2.1.js"></script>
+			<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+			<meta charset="utf-8">
+			<meta name="author" content="Jordan Golde">
+			<meta name="keywords" content="Jordan,Golde,Resume,Blog,Opinion">
+			<meta name="description" content="Jordan Golde web site and blog">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<br></br>	
+		<h1>Jordan Golde</h1>
+		
+		<!-- Professional Picture -->
+		<img src="rss/images/HeadQuote.jpg" class="CenteredPhotos">
+		<!-- Create space between blog header and about content -->
+		<br></br>
+			<!-- Header Navbar -->
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<!-- create the three lines for the small dropdown expansion button -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">BootstrapBay</a>
 				</div>
-				
-				<br></br>
-				
-				<div>
-				<h2>Resume</h2>
-						<p></p>
-						<a href="JordanGoldeResume.pdf">View Jordan Golde's Resume (PDF)</a>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+							<li id="homepage" class="active"><a href="#HomePage.html">Home</a></li>
+							<!-- Blog is a dropdown menu in the navbar -->
+							<li id="blog" >
+								<a href="#Blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Themes</li>
+									<li><a href="#">Popular</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Cooking</a></li>
+									<li><a href="#">Snowboarding</a></li>
+									<li><a href="#">Programming</a></li>
+									<li><a href="#">Gaming</a></li>
+								</ul>
+							</li>
+							<li id="contactme"><a href="#contact.asp">Contact Me</a></li>
+							<li id="about"><a href="#about.asp">About</a></li>
+							<!--<li id="barIcon" style="float:right"><a href="sidebar"><image src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh5Y5NbWiiwLxvu49Du81U0bHrwYUfjFVhuGnDc9s3Yt-gqnl_" height="15" width="15"></a>-->
+					</ul>
 				</div>
-		</body>
+			</div>				
+		</div>
+
+		<!-- Footer Navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+			<div class="container">
+				<div class="navbar-text pull-left">
+					<p>© 2017 Jordan Golde. All Rights Reserved.</p>
+				</div>
+				<div class="navbar-text pull-right">
+					<b>Social&nbsp;&nbsp;&nbsp;</b> <!-- escape characters for spaces -->
+					<a href="#"<i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="#"<i class="fa fa-twitter fa-2x"></i></a>
+					<a href="#"<i class="fa fa-github-square fa-2x"></i></a>
+					<a href="#"<i class="fa fa-linkedin-square fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+				
+
+			<br></br>
+			<div>
+				<h2>About Me</h2>
+				<p>For now this just my personal sandbox of a website. Looking to expand it to be much more in the future! Actually professional bio will go here.</p>
+			</div>
+			<br></br>
+			
+			<div>
+			<h2>Resume</h2>
+					<p></p>
+					<a href="JordanGoldeResume.pdf">View Jordan Golde's Resume (PDF)</a>
+			</div>
+	</body>
 </html>
 
 <!-- onclick=grantActiveStatus("article") -->
